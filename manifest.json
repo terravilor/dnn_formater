@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "DNN Formater",
+  "description": "Formata o admin do DNN para ter largura fixa.",
+  "version": "0.1",
+  "content_scripts": [
+    {
+      "matches": ["http://admebranding.brastemp.com.br/*"],
+      "js": ["jquery.js", "formater.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "permissions": [
+    "tabs", "http://admebranding.brastemp.com.br/*"
+  ]
+}
